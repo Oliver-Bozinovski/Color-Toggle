@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background-color: gray;
+  color: lightgray;
+}
+body .toggle-menu-icon-container {
+  margin: 0;
+  padding: 0.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+body .toggle-menu-icon-container #toggle-menu-icon {
+  cursor: pointer;
+}
+body #menu-container {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+  top: -1rem;
+  visibility: hidden;
+}
+body #menu-container .menu {
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+body #menu-container .menu__item {
+  padding: 0.7rem 0;
+  border: 1px solid;
+  width: 20%;
+}
+body #menu-container .menu__item--0 {
+  background-color: gray;
+}
+body #menu-container .menu__item--1 {
+  background-color: red;
+}
+body #menu-container .menu__item--2 {
+  background-color: orange;
+}
+body #menu-container .menu__item--3 {
+  background-color: purple;
+}
+body #menu-container .menu__item--4 {
+  background-color: green;
+}
+body #color-name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+}/*# sourceMappingURL=styles.css.map */

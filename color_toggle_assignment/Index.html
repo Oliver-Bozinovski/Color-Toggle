@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/35169691ef.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Color Toggle</title>
+  </head>
+
+  <body>
+    <!-- Toggle menu button -->
+    <div class="toggle-menu-icon-container">
+      <i id="toggle-menu-icon" class="fa-solid fa-bars fa-2xl"></i>
+    </div>
+
+    <!-- Background Color Menu -->
+    <menu id="menu-container">
+      <ul class="menu">
+        <li class="menu__item menu__item--0">
+          <input
+            type="radio"
+            name="background-color"
+            value="gray"
+            class="radio-btn-0"
+          />
+        </li>
+        <li class="menu__item menu__item--1">
+          <input
+            type="radio"
+            name="background-color"
+            value="red"
+            class="radio-btn-1"
+          />
+        </li>
+        <li class="menu__item menu__item--2">
+          <input
+            type="radio"
+            name="background-color"
+            value="orange"
+            class="radio-btn-2"
+          />
+        </li>
+        <li class="menu__item menu__item--3">
+          <input
+            type="radio"
+            name="background-color"
+            value="purple"
+            class="radio-btn-3"
+          />
+        </li>
+        <li class="menu__item menu__item--4">
+          <input
+            type="radio"
+            name="background-color"
+            value="green"
+            class="radio-btn-4"
+          />
+        </li>
+      </ul>
+    </menu>
+
+    <!-- Background Color -->
+    <h1 id="color-name">Gray</h1>
+  </body>
+</html>

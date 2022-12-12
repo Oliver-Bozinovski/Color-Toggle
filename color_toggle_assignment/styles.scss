@@ -1,0 +1,77 @@
+$color-0: gray;
+$color-1: red;
+$color-2: orange;
+$color-3: purple;
+$color-4: green;
+$text-color: lightgray;
+
+
+body {
+    margin: 0;
+    background-color: $color-0;
+    color: $text-color;
+
+    // Toggle Menu Button Style
+    .toggle-menu-icon-container {
+        margin: 0;
+        padding: 0.5rem 0;
+        position: relative;
+        z-index: 1;
+
+        #toggle-menu-icon {
+            cursor: pointer;
+        }
+    }
+
+    // Color Menu Style
+    #menu-container {
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        position: relative;
+        top: -1rem;
+        visibility: hidden;
+
+        .menu {
+            padding: 0;
+            list-style: none;
+
+
+            cursor: pointer;
+
+            &__item {
+                padding: 0.7rem 0;
+                border: 1px solid;
+                width: 20%;
+            }
+
+            &__item--0 {
+                background-color: $color-0;
+            }
+
+            &__item--1 {
+                background-color: $color-1;
+            }
+
+            &__item--2 {
+                background-color: $color-2;
+            }
+
+            &__item--3 {
+                background-color: $color-3;
+            }
+
+            &__item--4 {
+                background-color: $color-4;
+            }
+        }
+
+    }
+
+    // Title Text Style
+    #color-name {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+}
