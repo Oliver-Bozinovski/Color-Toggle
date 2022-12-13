@@ -22,7 +22,8 @@ radioBtns.forEach(function(radioBtn) {
     radioBtn.addEventListener("click", function() {
       document.body.style.backgroundColor = this.value;
       document.querySelector("#color-name").innerText = this.value;
-      menuContainer.style.visibility = "collapse";
+      menuContainer.style.visibility = "hidden";
+      menuContainer.style.left = "-100%";
     });
 });
 
