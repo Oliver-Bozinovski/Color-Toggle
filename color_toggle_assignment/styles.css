@@ -19,6 +19,7 @@ body #menu-container {
   position: relative;
   top: -1rem;
   visibility: hidden;
+  transition: all 1000ms ease-in-out;
 }
 body #menu-container .menu {
   padding: 0;
