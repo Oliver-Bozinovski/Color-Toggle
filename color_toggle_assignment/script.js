@@ -3,24 +3,15 @@ const menuContainer = document.querySelector("#menu-container");
 const radioBtns = document.querySelectorAll("input[type=radio]");
 
 
-// Menu toggle on mouseover and mouseout events!
+// Menu toggle on hover!
 
-toggleMenuIcon.addEventListener("mouseover", function() {
-    menuContainer.style.visibility = "visible";
-  });
+toggleMenuIcon.addEventListener("mouseenter", function() {
+  menuContainer.style.visibility = "visible";
+});
 
-toggleMenuIcon.addEventListener("mouseout", function() {
-    menuContainer.style.visibility = "hidden";
-  });
-
-menuContainer.addEventListener("mouseover", function() {
-    menuContainer.style.visibility = "visible";
-  });
-
-menuContainer.addEventListener("mouseout", function() {
-    menuContainer.style.visibility = "hidden";
-  });
-
+menuContainer.addEventListener("mouseleave", function() {
+  menuContainer.style.visibility = "hidden";
+});
 
 
 // Selecting the background color with a rado button !
