@@ -7,26 +7,18 @@ const radioBtns = document.querySelectorAll("input[type=radio]");
 
 toggleMenuIcon.addEventListener("mouseover", function() {
     menuContainer.style.visibility = "visible";
-    menuContainer.style.transition = "visibility 500ms ease-in-out";
-    menuContainer.style.opacity = "1";
   });
 
 toggleMenuIcon.addEventListener("mouseout", function() {
     menuContainer.style.visibility = "hidden";
-    menuContainer.style.transition = "visibility 500ms ease-in-out";
-    menuContainer.style.opacity = "0";
   });
 
 menuContainer.addEventListener("mouseover", function() {
     menuContainer.style.visibility = "visible";
-    menuContainer.style.transition = "visibility 500ms ease-in-out";
-    menuContainer.style.opacity = "1";
   });
 
 menuContainer.addEventListener("mouseout", function() {
     menuContainer.style.visibility = "hidden";
-    menuContainer.style.transition = "visibility 500ms ease-in-out";
-    menuContainer.style.opacity = "0";
   });
 
 
