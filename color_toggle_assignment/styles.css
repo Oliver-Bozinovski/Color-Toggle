@@ -14,7 +14,7 @@ body .toggle-menu-icon-container #toggle-menu-icon {
 }
 body #menu-container {
   margin: 0;
-  padding: 0;
+  padding: 1px;
   z-index: 1;
   position: relative;
   top: -1rem;
