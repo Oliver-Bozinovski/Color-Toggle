@@ -7,10 +7,12 @@ const radioBtns = document.querySelectorAll("input[type=radio]");
 
 toggleMenuIcon.addEventListener("mouseenter", function() {
   menuContainer.style.visibility = "visible";
+  menuContainer.style.left = "0";
 });
 
 menuContainer.addEventListener("mouseleave", function() {
   menuContainer.style.visibility = "hidden";
+  menuContainer.style.left = "-100%";
 });
 
 
