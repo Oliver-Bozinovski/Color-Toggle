@@ -1,7 +1,10 @@
 const toggleMenuIcon = document.querySelector("#toggle-menu-icon");
 const menuContainer = document.querySelector("#menu-container");
 const radioBtns = document.querySelectorAll("input[type=radio]");
-
+const changeColor = function(color) {
+  document.body.style.backgroundColor = color;
+  document.querySelector("#color-name").innerText = color;
+};
 
 // Menu toggle on hover!
 
@@ -31,24 +34,20 @@ radioBtns.forEach(function(radioBtn) {
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "0") {
-      document.body.style.backgroundColor = "gray";
-      document.querySelector("#color-name").innerText = "gray";
+      changeColor("gray");
       document.querySelector("input[type=radio][value=gray]").checked = true;
     } else if (event.key === "1") {
-      document.body.style.backgroundColor = "red";
-      document.querySelector("#color-name").innerText = "red";
+      changeColor("red");
       document.querySelector("input[type=radio][value=red]").checked = true;
     } else if (event.key === "2") {
-      document.body.style.backgroundColor = "orange";
-      document.querySelector("#color-name").innerText = "orange";
+      changeColor("orange");
       document.querySelector("input[type=radio][value=orange]").checked = true; 
     } else if (event.key === "3") {
-      document.body.style.backgroundColor = "purple";
-      document.querySelector("#color-name").innerText = "purple";
+      changeColor("purple");
       document.querySelector("input[type=radio][value=purple]").checked = true;
     } else if (event.key === "4") {
-      document.body.style.backgroundColor = "green";
-      document.querySelector("#color-name").innerText = "green";
+      changeColor("green");
       document.querySelector("input[type=radio][value=green]").checked = true;
     }
   });
+
